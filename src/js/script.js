@@ -1,7 +1,8 @@
-const GITHUB_LINK = "https://github.com/jadenyjw"
-const LINKEDIN_LINK = "https://linkedin.com/in/jadenyjw/"
-const DEVPOST_LINK = "https://devpost.com/jadenyjw"
-const EMAIL_ADDRESS ="jadenyjw@gmail.com, jaden.wang@mail.utoronto.ca"
+const GITHUB_LINK = "https://github.com/shayans66"
+const LINKEDIN_LINK = "https://www.linkedin.com/in/shayan-sarnevesht-b4325b158/"
+const DEVPOST_LINK = "https://devpost.com/shayans66"
+const EMAIL_ADDRESS ="42shayan42@gmail.com"//, jaden.wang@mail.utoronto.ca"
+    // const EMAIL_ADDRESS ="42shayan42@gmail.com, jaden.wang@mail.utoronto.ca"
 const RESUME_LINK = "resume.pdf"
 var command = ""
 
@@ -12,7 +13,7 @@ var xmlHttp = new XMLHttpRequest();
 xmlHttp.onreadystatechange = function() {
     if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
         PAC_COUNT = xmlHttp.responseText;
-        PACMAN_STR = "As of this week, I've ran pacman -Syu " + PAC_COUNT + " times."
+        //PACMAN_STR = "As of this week, I've ran pacman -Syu " + PAC_COUNT + " times."
 }
 xmlHttp.open("GET", "https://stats.jadenyjw.ml/pacman", true); // true for asynchronous
 xmlHttp.send(null);
@@ -34,15 +35,15 @@ grlc: GfT5tBDrKEVpAw4oDEjXGMkx4anqDr3R4u <br>
 ppl: paypal.me/jadenyjw`
 
 const ABOUT_STR =
-`I'm Jaden Wang, a current Software Engineering specialist and Statistics major at the University of Toronto Scarborough Campus.`
+`I'm Shayan Sarnevesht, a current high school student ast Saratoga High school who is a full stack develoer in his free time..`
 
 const JSH_STR =
-`<span class="username">jaden</span> &nbsp; <span class="at"> @ </span> &nbsp; <span class="hostname">jadenyjw.ml</span>
+`<span class="username">jaden</span> &nbsp; <span class="at"> @ </span> &nbsp; <span class="hostname">shayansarn.me/</span>
 &nbsp; <span class="at"> in </span> &nbsp; <span class="directory"> ~ </span>`
 
 const RESET_STR =
 `<div class="row">
-  <span class="username">jaden</span> &nbsp; <span class="at"> @ </span> &nbsp; <span class="hostname">jadenyjw.ml</span>
+  <span class="username">jaden</span> &nbsp; <span class="at"> @ </span> &nbsp; <span class="hostname">shayansarn.me</span>
   &nbsp; <span class="at"> in </span> &nbsp; <span class="directory"> ~ </span>
 </div>
 <div class="row">
