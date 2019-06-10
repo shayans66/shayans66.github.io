@@ -1,0 +1,46 @@
+body {
+  background-color: #073642;
+  font-family: 'Roboto Mono', monospace;
+  overflow-x:hidden;
+}
+
+#terminal{
+  margin: 2%;
+
+}
+
+.username {
+  color: #268bd2;
+}
+
+.hostname {
+  color: #859900;
+}
+
+.directory {
+  color: 	#b58900;
+}
+
+.ls {
+  color: #2aa198
+}
+
+.dollar {
+  color: #dc322f;
+}
+
+.at {
+  color: #eee8d5;
+}
+
+.default{
+  color: #fdf6e3;
+}
+
+.trans {
+  background-color: transparent;
+  border: none;
+  outline:none;
+  color: #fdf6e3;
+  width: 90%
+}

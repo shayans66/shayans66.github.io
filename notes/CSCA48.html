@@ -1,0 +1,528 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSCA48</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#csca48---introduction-to-computer-science-ii">CSCA48 - Introduction to Computer Science II</a>
+<ul>
+<li><a href="#week-11">Week 11</a></li>
+<li><a href="#week-10">Week 10</a></li>
+<li><a href="#week-9">Week 9</a></li>
+<li><a href="#week-8">Week 8</a></li>
+<li><a href="#week-7">Week 7</a></li>
+<li><a href="#reading-week">Reading Week</a></li>
+<li><a href="#week-6-happy-valentines-day-❤️">Week 6 (Happy Valentine’s Day ❤️)</a></li>
+<li><a href="#week-5">Week 5</a></li>
+<li><a href="#week-4">Week 4</a></li>
+<li><a href="#week-3">Week 3</a></li>
+<li><a href="#week-2">Week 2</a></li>
+<li><a href="#week-1">Week 1</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="csca48---introduction-to-computer-science-ii">CSCA48 - Introduction to Computer Science II</h1>
+<p><strong>Contact Information</strong>:</p>
+<p><em>Name: Yi Jie (Jaden) Wang</em><br>
+<em>Email: jaden.wang [at] <a href="http://mail.utoronto.ca">mail.utoronto.ca</a></em><br>
+<em>Tutorial: TUT 0016 MW120 Thursday 9-10AM</em><br>
+<em>Office Hours: Thursday IC400A 10-11AM</em></p>
+<h2 id="week-11">Week 11</h2>
+<h3 id="recursion">Recursion</h3>
+<h4 id="quiz-2-takeup">Quiz 2 Takeup</h4>
+<h4 id="drawing-h-fractals-with-recursion">Drawing H Fractals with Recursion</h4>
+<p>Suppose you were given a function that can draw a line between two specified coordinates:<br>
+<code>drawLine(x0, y0, x1, y1)</code></p>
+<p>Develop an algorithm to draw a fractal of Hs. <code>HTree(int order, float size, float x, float y)</code> to a given order.</p>
+<p>This means that for every <code>H</code> you draw, another <code>H</code> stemming from the 4 corners of the original <code>H</code>, an <code>order</code> amount of times.</p>
+<h2 id="week-10">Week 10</h2>
+<h3 id="more-testing">More Testing</h3>
+<p><strong>Acceptance Testing</strong><br>
+Acceptance testing is done by the user/client. Does the user accept the product? Is the user satisfied with the product?</p>
+<ul>
+<li>Tested by passing driver cases or a few sample cases.</li>
+</ul>
+<p><strong>Correctness Testing</strong><br>
+Correctness testing is done by the software designers. It makes sure that your algorithms behave appropriately to all allowable inputs.</p>
+<ul>
+<li>Tested by identifying all cases and creating tests for all of them.</li>
+<li>Your implemented data structure must <em>represent the correct structure at its current state</em>.</li>
+</ul>
+<h3 id="testing-assignment-2-bsts">Testing Assignment 2 BSTs</h3>
+<p>How do we test Assignment 2 BSTs?</p>
+<ul>
+<li>What operations do we have to implement?</li>
+<li>How do we guarantee the structure of the tree is <em>correct</em>?</li>
+</ul>
+<h3 id="extra-material">Extra Material</h3>
+<p>Open to discussion from any topics such as algorithms, complexity, data structures, etc.</p>
+<h2 id="week-9">Week 9</h2>
+<p>Midterm Takeup!</p>
+<h2 id="week-8">Week 8</h2>
+<h3 id="review">Review</h3>
+<p><strong>Any questions on time complexity and BSTs?</strong></p>
+<p><strong>Useful Resource:</strong> <a href="http://bigocheatsheet.com/">http://bigocheatsheet.com/</a></p>
+<p><strong>Midterm Question 10</strong></p>
+<p>It’s feeding time for the Peekemons! You need to know which of them are super hungry so you can feed those first.</p>
+<p>You decide to write a function that will <em>return a list of the PeekeMons whose hunger level is greater than a given threshold</em>.</p>
+<p>However, you <em>do not want to duplicate the PeekeMon data at all</em>.</p>
+<p><strong>a)</strong> In no more than 5 steps, describe the process you will implement to solve this task.</p>
+<p><strong>b)</strong> Draw a diagram that illustrates how the list returned by your function works.</p>
+<p><strong>Demonstration of Quicksort</strong></p>
+<ul>
+<li>Initialize an array with 1000000 (one million) integers</li>
+<li>Fill it with random numbers (use drand48())</li>
+<li>Sort with the built-in qsort() from stdlib</li>
+<li>Time your program with <code>time ./a.out</code>, on UNIX systems.</li>
+</ul>
+<p>Signature of <code>qsort</code>:<br>
+<code>void qsort(void *base, size_t nitems, size_t size, int (*compar)(const void *, const void*))</code><br>
+Signature of <code>compare:</code><br>
+<code>int compare (const void * a, const void * b)</code></p>
+<p><strong>Complete P4 on Unit 3 Notes</strong></p>
+<p><strong>a)</strong> Design the data representation for patients.<br>
+<strong>b)</strong> Design the core of the triage patient management system.<br>
+<strong>c)</strong> Implement and test your solution!</p>
+<p><strong>Optional Problems</strong></p>
+<ol>
+<li>Last class, we dealt with reversing a linked list. This time, reverse a linked list, but only between the <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>a</mi><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow><annotation encoding="application/x-tex">a^{th}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.849108em; vertical-align: 0em;"></span><span class="mord"><span class="mord mathit">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.849108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">t</span><span class="mord mathit mtight">h</span></span></span></span></span></span></span></span></span></span></span></span></span> and <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>b</mi><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow><annotation encoding="application/x-tex">b^{th}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.849108em; vertical-align: 0em;"></span><span class="mord"><span class="mord mathit">b</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.849108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">t</span><span class="mord mathit mtight">h</span></span></span></span></span></span></span></span></span></span></span></span></span> nodes.</li>
+<li>Given a linked list of integers, determine if it is monotonic, or neither. A linked list is monotonic if and only if all consecutive integers are either non-decreasing or non-increasing.</li>
+</ol>
+<h2 id="week-7">Week 7</h2>
+<h3 id="program-testingdebugging">Program Testing/Debugging</h3>
+<p><em>20% of the people who submitted Exercise 6 failed the testing.</em></p>
+<p><strong>Example 0:</strong></p>
+<p>Consider the following code that takes in an <code>int[]</code> and <code>size</code> and returns the <strong>largest</strong> number in the array.</p>
+<p>What’s wrong with the following code?<br>
+Hint: There are 4 problems.</p>
+<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> <span class="token function">getLargest</span><span class="token punctuation">(</span><span class="token keyword">int</span> arr<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">int</span> size<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	largest <span class="token operator">=</span> <span class="token number">0</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> size<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;</span> largest<span class="token punctuation">)</span><span class="token punctuation">{</span>
+			largest <span class="token operator">=</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>Example 1:</strong></p>
+<p>Consider the following code that returns the head of the linked list with the nodes from <code>head</code> <strong>reversed</strong>. What’s wrong with the following code?</p>
+<pre class=" language-c"><code class="prism  language-c"><span class="token comment">// Node definition</span>
+<span class="token keyword">typedef</span> <span class="token keyword">struct</span> node<span class="token punctuation">{</span>
+	<span class="token keyword">int</span> number<span class="token punctuation">;</span>
+	<span class="token keyword">struct</span> node <span class="token operator">*</span>next<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> Node<span class="token punctuation">;</span>
+
+Node<span class="token operator">*</span> <span class="token function">reverse</span><span class="token punctuation">(</span>Node<span class="token operator">*</span> head<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	Node <span class="token operator">*</span>prev <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+	Node <span class="token operator">*</span>curr <span class="token operator">=</span> head<span class="token punctuation">;</span>
+	Node <span class="token operator">*</span>tmp <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+	
+	<span class="token keyword">while</span><span class="token punctuation">(</span>curr <span class="token operator">!=</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		tmp <span class="token operator">=</span> curr<span class="token operator">-&gt;</span>next<span class="token punctuation">;</span>
+		tmp<span class="token operator">-&gt;</span>next <span class="token operator">=</span> prev<span class="token punctuation">;</span>
+		prev <span class="token operator">=</span> curr<span class="token punctuation">;</span>
+		curr <span class="token operator">=</span> tmp<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> curr<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>Example 2:</strong></p>
+<p>Here’s a simple snippet of code that goes through the numbers 1 to 100 and for each number does the following:</p>
+<ul>
+<li>Print <code>Fizz</code> if divisible by 3</li>
+<li>Print <code>Buzz</code> if divisble by 5</li>
+<li>Print <code>FizzBuzz</code> if divisible by both 3 and 5</li>
+<li>Print the number otherwise</li>
+</ul>
+<p>What’s wrong with the following code?</p>
+<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">100</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">%</span> <span class="token number">3</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Fizz"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">%</span> <span class="token number">5</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Buzz"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">%</span> <span class="token number">3</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">||</span> i <span class="token operator">%</span> <span class="token number">5</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"FizzBuzz"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">else</span><span class="token punctuation">{</span>
+		<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>Example 3:</strong></p>
+<p>Consider this program that calculates the <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>n</mi><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow><annotation encoding="application/x-tex">n^{th}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.849108em; vertical-align: 0em;"></span><span class="mord"><span class="mord mathit">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.849108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">t</span><span class="mord mathit mtight">h</span></span></span></span></span></span></span></span></span></span></span></span></span> Fibonacci number. What’s wrong with this code?</p>
+<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> <span class="token function">fibonacci</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+	<span class="token keyword">int</span> c<span class="token punctuation">;</span>
+	
+	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		c <span class="token operator">=</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>
+		a <span class="token operator">=</span> b<span class="token punctuation">;</span>
+		b <span class="token operator">=</span> c<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> b<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>Example 4:</strong></p>
+<p>Debugging and testing skills are also transferable among languages. Consider this <strong>Python</strong> code that determines whether or not <code>strA</code> is a permutation of <code>strB</code>. What’s wrong with this code?</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">isPerm</span><span class="token punctuation">(</span>strA<span class="token punctuation">,</span> strB<span class="token punctuation">)</span><span class="token punctuation">:</span>
+	<span class="token comment"># Initialize a set to keep track of the characters in A</span>
+	chars_in_A <span class="token operator">=</span> <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token comment"># Add all the characters in A to the set.</span>
+	<span class="token keyword">for</span> char <span class="token keyword">in</span> strA<span class="token punctuation">:</span>
+		<span class="token builtin">set</span><span class="token punctuation">.</span>add<span class="token punctuation">(</span>char<span class="token punctuation">)</span>
+	<span class="token comment"># Go through each character in B.</span>
+	<span class="token keyword">for</span> char <span class="token keyword">in</span> strB<span class="token punctuation">:</span>
+		<span class="token comment"># If we find a character that's not in A</span>
+		<span class="token comment"># We know it's not a permutation.</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>char <span class="token operator">not</span> <span class="token keyword">in</span> chars_in_A<span class="token punctuation">)</span><span class="token punctuation">:</span>
+			<span class="token keyword">return</span> <span class="token boolean">False</span>
+	
+	<span class="token keyword">return</span> <span class="token boolean">True</span>
+</code></pre>
+<h4 id="testing-strategies">Testing Strategies</h4>
+<ul>
+<li>Before testing anything, you want to know what kind of input your program will be receiving. What ranges of values? Will you get invalid input?</li>
+<li>Think of a few cases that will properly represent a “general” case that your program will receive. Implement those tests.</li>
+<li>Think of “edge” cases, which don’t happen as often as your “general” cases but your program has to properly handle those cases as well.</li>
+</ul>
+<h2 id="reading-week">Reading Week</h2>
+<p>No classes!</p>
+<h2 id="week-6-happy-valentines-day-❤️">Week 6 (Happy Valentine’s Day ❤️)</h2>
+<h3 id="dynamic-memory-management">Dynamic Memory Management</h3>
+<p><code>calloc(num, size)</code> - What does this do?</p>
+<p>What are the advantages of <code>calloc</code> over regular arrays?</p>
+<p><strong>Example 1</strong><br>
+Consider the following code:</p>
+<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> <span class="token operator">*</span><span class="token function">newArray</span><span class="token punctuation">(</span><span class="token keyword">int</span> size<span class="token punctuation">)</span>  
+<span class="token punctuation">{</span>  
+	<span class="token keyword">int</span> <span class="token operator">*</span>array<span class="token punctuation">;</span> <span class="token comment">// A pointer! not an array declaration  </span>
+	array<span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">calloc</span><span class="token punctuation">(</span>size<span class="token punctuation">,</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Get 'size' items large  </span>
+	enough to hold one <span class="token keyword">int</span> each  
+	<span class="token keyword">return</span> array<span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  
+<span class="token punctuation">{</span>  
+	<span class="token keyword">int</span> size<span class="token punctuation">;</span>  
+	<span class="token keyword">int</span> <span class="token operator">*</span>my_array<span class="token punctuation">;</span>  
+	  
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Please enter the size of the array\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+	<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+	<span class="token function">getchar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+	  
+	my_array<span class="token operator">=</span><span class="token function">newArray</span><span class="token punctuation">(</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>my_array<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span>  
+	<span class="token punctuation">{</span>  
+		<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Out of memory allocating array!\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+		<span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>  
+	<span class="token punctuation">}</span>
+	
+	<span class="token comment">/*
+	Set each ith element to be equal to i in my_array
+	*/</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Note: <code>calloc</code> may return <code>NULL</code>. Always check the return value of <code>calloc</code>.</p>
+<p><strong>Task</strong>: Write code to set the <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>i</mi><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow><annotation encoding="application/x-tex">i^{th}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.849108em; vertical-align: 0em;"></span><span class="mord"><span class="mord mathit">i</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.849108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">t</span><span class="mord mathit mtight">h</span></span></span></span></span></span></span></span></span></span></span></span></span> element in <code>my_array</code> to <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.65952em; vertical-align: 0em;"></span><span class="mord mathit">i</span></span></span></span></span>.</p>
+<p>Once we are done with our memory, we have to free it. Which of the following is the correct way to free our allocated memory?</p>
+<pre class=" language-c"><code class="prism  language-c"><span class="token comment">// Option a)  </span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span>size<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>  
+<span class="token punctuation">{</span>  
+	<span class="token function">free</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">(</span>my_array<span class="token operator">+</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>  
+  
+<span class="token comment">// Option b)  </span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span>size<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>  
+<span class="token punctuation">{</span>  
+	<span class="token function">free</span><span class="token punctuation">(</span>my_array<span class="token operator">+</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>  
+  
+<span class="token comment">// Option c)  </span>
+<span class="token function">free</span><span class="token punctuation">(</span>my_array<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>Example 2</strong></p>
+<p>Consider the following code that allocates a 2D array.</p>
+<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> <span class="token operator">*</span><span class="token function">new2DArray</span><span class="token punctuation">(</span><span class="token keyword">int</span> numRows<span class="token punctuation">,</span> <span class="token keyword">int</span> numColumns<span class="token punctuation">)</span>  
+<span class="token punctuation">{</span>  
+	<span class="token keyword">int</span> <span class="token operator">*</span>array<span class="token punctuation">;</span> <span class="token comment">// Still just a pointer!  </span>
+	array<span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">calloc</span><span class="token punctuation">(</span>numRows<span class="token operator">*</span>numColumns<span class="token punctuation">,</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+	<span class="token keyword">return</span> array<span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="questions">Questions:</h4>
+<ol>
+<li>How does this look like in computer memory?</li>
+<li>How do we access the element at <code>[i][j]</code> element of <code>array</code> with pointer arithmetic?</li>
+<li>Write code so that the <code>[i][j]</code> entry is equal to <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>3</mn><mi>i</mi><mo>+</mo><mn>7</mn><mi>j</mi></mrow><annotation encoding="application/x-tex">3i+ 7j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.74285em; vertical-align: -0.08333em;"></span><span class="mord">3</span><span class="mord mathit">i</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.85396em; vertical-align: -0.19444em;"></span><span class="mord">7</span><span class="mord mathit" style="margin-right: 0.05724em;">j</span></span></span></span></span>.</li>
+</ol>
+<h4 id="optional-practice-problems">Optional Practice Problems:</h4>
+<ol>
+<li>The transpose operation on an <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mo>×</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m \times n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.66666em; vertical-align: -0.08333em;"></span><span class="mord mathit">m</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span class="mord mathit">n</span></span></span></span></span> matrix <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathit">A</span></span></span></span></span> interchanges the rows and columns of <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathit">A</span></span></span></span></span> and produces an <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>×</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n \times m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.66666em; vertical-align: -0.08333em;"></span><span class="mord mathit">n</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span class="mord mathit">m</span></span></span></span></span> matrix. Implement the matrix transpose operation.</li>
+<li>An <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n\times n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.66666em; vertical-align: -0.08333em;"></span><span class="mord mathit">n</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span class="mord mathit">n</span></span></span></span></span> matrix is symmetric if and only if <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>A</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><msub><mi>A</mi><mrow><mi>j</mi><mi>i</mi></mrow></msub></mrow><annotation encoding="application/x-tex">A_{ij} = A_{ji}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.969438em; vertical-align: -0.286108em;"></span><span class="mord"><span class="mord mathit">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.311664em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right: 0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.286108em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.969438em; vertical-align: -0.286108em;"></span><span class="mord"><span class="mord mathit">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.311664em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight" style="margin-right: 0.05724em;">j</span><span class="mord mathit mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.286108em;"><span class=""></span></span></span></span></span></span></span></span></span></span> <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn><mo>≤</mo><mi>i</mi><mo>≤</mo><mi>n</mi><mo separator="true">,</mo><mn>0</mn><mo>≤</mo><mi>j</mi><mo>≤</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">0\leq i \leq n, 0 \leq j \leq n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.78041em; vertical-align: -0.13597em;"></span><span class="mord">0</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.79549em; vertical-align: -0.13597em;"></span><span class="mord mathit">i</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.83888em; vertical-align: -0.19444em;"></span><span class="mord mathit">n</span><span class="mpunct">,</span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="mord">0</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.85396em; vertical-align: -0.19444em;"></span><span class="mord mathit" style="margin-right: 0.05724em;">j</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span class="mord mathit">n</span></span></span></span></span>. Write code to determine whether or not a <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n \times n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.66666em; vertical-align: -0.08333em;"></span><span class="mord mathit">n</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span class="mord mathit">n</span></span></span></span></span> matrix is symmetric.</li>
+</ol>
+<h2 id="week-5">Week 5</h2>
+<h3 id="any-questions">Any Questions?</h3>
+<h3 id="practice-with-compound-data-types">Practice with Compound Data Types</h3>
+<p>Let’s define and implement a compound data type to store information about music records.</p>
+<p><strong>Step 1:</strong><br>
+Before coding, think of what defines a music record. What kind of information is necessary?</p>
+<p><strong>Step 2:</strong><br>
+Implement the data type in <code>C</code>, then in <code>main</code>, declare an array of size <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>10</mn></mrow><annotation encoding="application/x-tex">10</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span><span class="mord">0</span></span></span></span></span> that contains music records.</p>
+<p><strong>Step 3:</strong><br>
+Write a function that allows the user to input information for a specific pointer to a music record. You will need to use <code>fgets()</code> and <code>scanf()</code>, then set the corresponding information.</p>
+<p>Example call:</p>
+<p><code>set_info(&amp;records[5]);</code></p>
+<p><strong>Step 4:</strong><br>
+Write a function that prints the array of music records.</p>
+<h2 id="week-4">Week 4</h2>
+<h3 id="any-questions-1">Any Questions?</h3>
+<p><strong>Problem 0</strong></p>
+<p>Write a program that does the following:</p>
+<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">void</span> <span class="token function">count_repeats</span><span class="token punctuation">(</span><span class="token keyword">char</span> <span class="token operator">*</span>str<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">*</span>counts<span class="token punctuation">)</span>  
+<span class="token punctuation">{</span>  
+	<span class="token comment">// This function takes a pointer to a string, and a pointer  </span>
+	<span class="token comment">// to an array of ints  </span>
+	<span class="token comment">// It counts how many times each character appears in the input  </span>
+	<span class="token comment">// string and updates that count in the corresponding entry of  </span>
+	<span class="token comment">// the array  </span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>But before you write it, what do you need to know?</p>
+<p><strong>Problem 1</strong></p>
+<pre class=" language-c"><code class="prism  language-c"><span class="token function">stringConcatenate</span><span class="token punctuation">(</span><span class="token keyword">char</span> <span class="token operator">*</span>strDest<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span>strSrc<span class="token punctuation">)</span>  
+<span class="token punctuation">{</span>  
+	<span class="token comment">// This function concatenates strSrc at the end of strDest  </span>
+	<span class="token comment">// Using pointers ;)  </span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>What would happen if we repeatedly called <code>stringConcatenate(str1, str1)</code> multiple times?</p>
+<h2 id="week-3">Week 3</h2>
+<h3 id="compiling-code">Compiling Code</h3>
+<p>During Week 1, you learned to compile your source code with the following command:<br>
+<code>gcc your_program.c</code></p>
+<p>From now on, you are encouraged to start compiling your programs like this:<br>
+<code>gcc -Wall -Werror your_program.c</code></p>
+<p>What do the flags <code>-Wall</code> and <code>-Werror</code> do?</p>
+<p><strong>Example 0</strong></p>
+<p>What would happen if you compiled the following program with both of the commands above?</p>
+<pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;stdio.h&gt;</span>  </span>
+ 
+<span class="token keyword">float</span> <span class="token function">square</span><span class="token punctuation">(</span><span class="token keyword">float</span> x<span class="token punctuation">)</span>  
+<span class="token punctuation">{</span>  
+	x<span class="token operator">=</span>x<span class="token operator">*</span>x<span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>  
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  
+<span class="token punctuation">{</span>  
+	<span class="token keyword">float</span> y<span class="token punctuation">;</span>  
+	y<span class="token operator">=</span><span class="token number">3.141592</span><span class="token punctuation">;</span>  
+	<span class="token function">square</span><span class="token punctuation">(</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<p>So how do we fix this program? We use Google!</p>
+<p><strong>Example 1</strong></p>
+<p>Find the compiler warning that will appear when attempting to compile this program.</p>
+<pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;stdio.h&gt;</span>  </span>
+  
+<span class="token keyword">float</span> <span class="token function">square</span><span class="token punctuation">(</span><span class="token keyword">float</span> x<span class="token punctuation">)</span>  
+<span class="token punctuation">{</span>  
+	x<span class="token operator">=</span>x<span class="token operator">*</span>x<span class="token punctuation">;</span>  
+	<span class="token keyword">return</span> x<span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>  
+  
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  
+<span class="token punctuation">{</span>  
+	<span class="token keyword">float</span> y<span class="token punctuation">;</span>  
+	y<span class="token operator">=</span><span class="token number">3.141592</span><span class="token punctuation">;</span>  
+	y<span class="token operator">=</span><span class="token function">square</span><span class="token punctuation">(</span><span class="token function">square</span><span class="token punctuation">(</span>y<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="memory-model-review">Memory Model Review</h3>
+<p>Key facts to remember:</p>
+<ul>
+<li>Every time a variable is declared, a “box” is allocated to store information. That allocated location in memory is then stored.</li>
+<li>Variables are local within the function they are declared in, so each function has its own space in memory.</li>
+</ul>
+<p><strong>Exercise 0</strong></p>
+<p>Draw a memory diagram that illustrates what happens in memory when you run the following snippet of code:</p>
+<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+	<span class="token keyword">int</span> x<span class="token punctuation">;</span> 
+	<span class="token keyword">int</span> y<span class="token punctuation">;</span> 
+	<span class="token keyword">float</span> pi<span class="token punctuation">;</span> 
+	x<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">;</span> 
+	y<span class="token operator">=</span>x<span class="token operator">+</span><span class="token number">3</span><span class="token punctuation">;</span> 
+	pi<span class="token operator">=</span>y<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span> 
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%f\n"</span><span class="token punctuation">,</span>pi<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span> 
+</code></pre>
+<p>What will be the final value printed by the program?</p>
+<p><strong>Exercise 1</strong></p>
+<p>Consider the next little program:</p>
+<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">void</span> <span class="token function">hard_working_function</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+	x<span class="token operator">=</span>x<span class="token operator">*</span>x<span class="token punctuation">;</span> 
+	x<span class="token operator">=</span>x<span class="token operator">/</span>x<span class="token punctuation">;</span> 
+	x<span class="token operator">=</span><span class="token number">3</span><span class="token operator">*</span>x<span class="token punctuation">;</span> 
+	x<span class="token operator">=</span>x<span class="token operator">+</span><span class="token number">71</span><span class="token punctuation">;</span> 
+	x<span class="token operator">=</span>x<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span> 
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+	<span class="token keyword">int</span> x<span class="token punctuation">;</span> 
+	x<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span> 
+	<span class="token function">hard_working_function</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span> 
+</code></pre>
+<p>What is the final value printed by the program?<br>
+Hint: Draw the memory model diagram.</p>
+<p><strong>Practice Problems For Fun</strong></p>
+<ol>
+<li>Create a program that determines whether or not a string is a palindrome.</li>
+<li>Implement a function that determines whether or not 2 strings are equal.</li>
+</ol>
+<h2 id="week-2">Week 2</h2>
+<h3 id="logical-and-bitwise-operators">Logical and Bitwise Operators</h3>
+<h4 id="bitwise-operators">Bitwise Operators</h4>
+<p>Everything in a computer is represented by sequences of <em>bits</em>. What are bits?</p>
+<p>Example:</p>
+<pre><code>2 = 00000010
+7 = 00000111
+64 = 01000000
+</code></pre>
+<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> c <span class="token operator">=</span> a<span class="token operator">&amp;</span>b<span class="token punctuation">;</span>
+</code></pre>
+<p>What does <code>&amp;</code> do? <code>&amp;</code> is known as one of many <em>bitwise operators</em>; this one being specifically the <em>AND</em> operator.</p>
+<p><strong>Truth Table - AND</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>X</th>
+<th>Y</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table><p>How does <em>bitwise AND</em> work?</p>
+<pre><code>   00000010
+&amp;  00000111
+-----------
+   00000010
+</code></pre>
+<p>If we used the same numbers, what would the result of <em>bitwise OR</em> be?</p>
+<h4 id="logical-operators">Logical Operators</h4>
+<p>Logical operators were introduced in CSCA08 with Python.</p>
+<p><code>a &amp;&amp; b</code> is equivalent to <code>a and b</code><br>
+<code>a || b</code> is equivalent to <code>a or b</code><br>
+<code>!a</code>  is equivalent to <code>not a</code></p>
+<pre class=" language-c"><code class="prism  language-c">a<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>  
+b<span class="token operator">=</span><span class="token number">7</span><span class="token punctuation">;</span>  
+c<span class="token operator">=</span>a<span class="token operator">&amp;</span>b<span class="token punctuation">;</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token operator">==</span><span class="token number">2</span> <span class="token operator">&amp;&amp;</span> b<span class="token operator">==</span><span class="token number">7</span><span class="token punctuation">)</span>  
+<span class="token punctuation">{</span>  
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"A is 2 and b is 7\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Remember, <em>boolean expressions</em> are expressions that are evaluated to be <em>TRUE</em> or <em>FALSE</em>.</p>
+<p>Which of the above are boolean expressions?</p>
+<h4 id="summary-of-operators">Summary of Operators</h4>
+<p><strong>Logical Operators</strong>:</p>
+<p><code>&amp;&amp;</code> - AND<br>
+<code>||</code> - OR<br>
+<code>!</code> - NOT</p>
+<p><strong>Bitwise Operators</strong>:<br>
+<code>&amp;</code> - AND<br>
+<code>|</code> - OR<br>
+…</p>
+<p>For a complete list of operators (that you may or may not use in this course), consult the <a href="https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Expressions-and-Operators">documentation</a>.</p>
+<p><strong>Example</strong></p>
+<p>Things to take note of:</p>
+<ul>
+<li>Just like Python, <code>==</code> is a logical comparison and <code>=</code> is for assignment. However, C allows you to run things like the following example.</li>
+<li>An assignment returns the <em>leftmost</em> value <em>after</em> the assignment.</li>
+<li>The precedence of bitwise operators is <em>higher</em> than logical operators. For a complete list of precedence, consult the <a href="https://en.cppreference.com/w/c/language/operator_precedence">documentation</a>.</li>
+</ul>
+<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> a<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>  
+<span class="token keyword">int</span> b<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>  
+<span class="token keyword">int</span> c<span class="token operator">=</span><span class="token number">7</span><span class="token punctuation">;</span>  
+  
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>a<span class="token operator">=</span>b <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>c<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span> b<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span> 
+<span class="token punctuation">{</span>  
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Is this going to get printed?\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span> 
+<span class="token keyword">else</span> 
+<span class="token punctuation">{</span>  
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Or is this going to get printed?\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre>
+<p>What is the output of this program?</p>
+<h3 id="practice-problem">Practice Problem:</h3>
+<p>Write a small program that uses a for loop to go over the numbers from 1 to 100, and prints out any that are perfect squares. The output of your program should look like:</p>
+<pre><code>4 = 2 * 2  
+9 = 3 * 3  
+16 = 4 * 4  
+.  
+(there are more perfect squares printed)  
+100 = 10 * 10
+</code></pre>
+<p>You will need to use for loops, conditional statements, and printf().</p>
+<p>Sample (<em>bad</em>) solution:</p>
+<pre class=" language-c"><code class="prism  language-c"><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"1 = 1*1\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"4 = 2*2\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"9 = 3*3\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"16 = 4*4\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token punctuation">.</span>  
+<span class="token punctuation">.</span> <span class="token punctuation">(</span>more printfs here<span class="token punctuation">)</span>  
+<span class="token punctuation">.</span> <span class="token punctuation">(</span>all the way to<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>  
+<span class="token punctuation">.</span>  
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"100 = 10*10\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Any comments on this piece of code?</p>
+<h2 id="week-1">Week 1</h2>
+<p>No tutorials first week! Here is a link to a random <a href="https://www.youtube.com/watch?v=6n3pFFPSlW4">video</a>.</p>
+
+    </div>
+  </div>
+</body>
+
+</html>
