@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url("./fonts/Avenir-Medium.eot");
+  src: url("./fonts/Avenir-Medium.eot?#iefix") format("embedded-opentype"), url("./fonts/Avenir-Medium.woff") format("woff"), url("./fonts/Avenir-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("./fonts/Avenir-Light.eot");
+  src: url("./fonts/Avenir-Light.eot?#iefix") format("embedded-opentype"), url("./fonts/Avenir-Light.woff") format("woff"), url("./fonts/Avenir-Light.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("./fonts/Avenir-Black.eot");
+  src: url("./fonts/Avenir-Black.eot?#iefix") format("embedded-opentype"), url("./fonts/Avenir-Black.woff") format("woff"), url("./fonts/Avenir-Black.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+   margin: 0;
+   padding: 0;
+   min-height: 100%;
+   min-width: 100%;
+   font-family: 'Avenir', Arial, sans-serif;
+   font-weight: 100;
+}
+
+body {
+   background-color: #eff2f1;
+   color: #425059;
+   font-size: 1.1rem;
+}
+
+.landing {
+   margin: 3rem 3rem 0 3rem;
+
+   h1 {
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+   }
+}
+
+a {
+   color: #008080;
+   text-decoration: none;
+   font-weight: 700;
+
+   &:hover {
+      color: #009fa0;
+   }
+}
+
+.container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin: 0;
+
+   .info, .xp {
+      margin: 0 3rem;
+      flex: 1 1 0;
+
+      h2 {
+         margin: 0;
+         font-weight: 400;
+      }
+
+   }
+}
+
+@media (max-width: 768px) {
+   body {
+      max-width: 768px;
+   }
+
+   .landing {
+      margin: 3rem 2rem 0 2rem;
+      h1 {
+         font-size: 2.5rem;
+      }
+   }
+
+   .container {
+      display: flex;
+      flex-direction: column;
+
+      .info, .xp {
+         margin: 0 2rem;
+      }
+   }
+}
+
+.footer {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   bottom: 0;
+   margin-top: 0;
+   margin-bottom: 1rem;
+
+   .icons {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .icons i {
+      padding: 0 1rem;
+      color: #425059;
+      font-size: 24px;
+   }
+
+   .icons i:hover {
+      color: #bbb;
+   }
+}
