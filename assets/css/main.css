@@ -128,10 +128,13 @@ input, select, textarea {
 	h2 {
 		font-size: 2em;
 		letter-spacing: -1px;
+		margin-bottom: 1px;
+
 	}
 
 		h2.alt {
 			color: #888;
+
 		}
 
 			h2.alt strong {
@@ -143,12 +146,36 @@ input, select, textarea {
 	}
 
 	header {
-		margin: 0 0 2em 0;
+		
+		margin: 0 0 3em 0;
+		
+
+	}
+	.moveup{
+		margin-bottom: 10em;
+	}
+	.intro-text{
+		font-weight: bold;
+		font: Roboto;
+		font-weight: 900;
+		color: yellow;
+
+	position: relative;
+	bottom: 20px;	
+	}
+	.mainthing{
+		font-weight: bold;
+	}
+	strong{
+		font-weight: bold;
+		font: Roboto;
+		font-weight: 900;
+		color: yellow;
+
+		position: relative;
+
 	}
 
-		header > p {
-			margin: 1em 0 0 0;
-		}
 
 	footer {
 		margin: 2em 0 0 0;
